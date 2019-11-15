@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
-import { BrowserRouter } from 'react-router-dom';
+import Main from './components/Main';
 
 class App extends Component {
   render()
@@ -9,6 +10,7 @@ class App extends Component {
     return(
       <BrowserRouter>
         <Navbar />
+        <Main />
       </BrowserRouter>
     )
   }
